@@ -27,8 +27,8 @@ Este é um aplicativo de questionário simples, desenvolvido com Flutter como pa
 
 1. Clone este repositório:
 ```bash
-   git clone https://github.com/lubpolita/QuestionarioFlutter.git
-   cd QuestionarioFlutter 
+   git clone https://github.com/lubpolita/FlutterQuiz.git
+   cd FlutterQuiz
 ```
 2. Instale as dependências:
 
