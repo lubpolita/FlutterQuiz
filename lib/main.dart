@@ -53,6 +53,13 @@ class _PerguntaAppState extends State<PerguntaApp> {
     print(_totalScore);
   }
 
+  void _refreshQuiz() {
+    setState(() {
+      _selectedQuestion = 0;
+      _totalScore = 0;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -62,7 +69,7 @@ class _PerguntaAppState extends State<PerguntaApp> {
       ),
       body: hasQuestionSelected
           ? Quiz(_questions, _selectedQuestion, _answer)
-          : Result(_totalScore),
+          : Result(_totalScore, _refreshQuiz),
     ));
   }
 }
